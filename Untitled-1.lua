@@ -1,3 +1,12 @@
+local LoadingLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Fin12n/Roblox/refs/heads/main/UI-Library/Loading.lua"))()
+
+    LoadingLib:CreateLoading({
+        Title = "Natri-hub",
+        Image = "rbxassetid://85827029493751", -- Thay bằng ID hình ảnh hợp lệ
+        ScriptName = "chúc các bạn có trải nghiệm tốt"
+    })
+
+
 -- Tạo UI icon bật/tắt
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -136,166 +145,32 @@ local Tabs = {
     b = Window:AddTab({ Title = "Gow a Garden", Icon = "" }),
     c = Window:AddTab({ Title = "Dead Rail", Icon = "" }),
     d = Window:AddTab({ Title = "Rival", Icon = "" }),
-    e = Window:AddTab({ Title = "Arise Crossover", Icon}),
+    e = Window:AddTab({ Title = "Arise Crossover", Icon = ""}),
 }
 
 --- Tab a
 
 Tabs.a:AddButton({
-    Title = "Redz Hub",
-    Description = "được sử dụng",
+    Title = "?",
+    Description = "?",
     Callback = function()
-     local Settings = {
-    JoinTeam = "Pirates"; -- Pirates / Marines
-    Translator = true;   -- true / false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+        
     end
 })
 
 Tabs.a:AddButton({
-    Title = "Xero",
-    Description = "được sử dụng",
+    Title = "?",
+    Description = "?",
     Callback = function()
-       getgenv().Team = "Marines"
-getgenv().Hide_Menu = false
-getgenv().Auto_Execute = true
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+       
     end
 })
 
 Tabs.a:AddButton({
-    Title = "HoHo",
-    Description = "được sử dụng",
+    Title = "?",
+    Description = "?",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
-    end
-})
-
-Tabs.a:AddButton({
-    Title = "tổng hợp",
-    Description = "sài tạp nếu trong Natri-hub thiếu",
-    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/TuanAnhIOSNew/refs/heads/main/TuanAnhIOS-TongHop.Lua"))()
-    end
-})
-
---- Tab b 
-
-Tabs.b:AddButton({
-    Title = "Blackhub",
-    Description = "Auto Farm, Auto Buy, Auto Feed Pets, Auto Sell, Teleport & More",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FischMain"))()
-    end
-})
-
-Tabs.b:AddButton({
-    Title = "Grow a Garden",
-    Description = "Auto Farm, Auto Event, Collect Seeds, Auto Sell, Auto Buy & More",
-    Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/GrowaGarden", true))()
-    end
-})
-
-Tabs.b:AddButton({
-    Title = "Speed Hub ",
-    Description = "Auto Farm, Auto Collect, Auto Buy, Auto Sell & More",
-    Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-    end
-})
-
-Tabs.b:AddButton({
-    Title = "Grow a Garden(2)",
-    Description = "Auto Farm, Auto Sell, Auto Buy, Teleport, Local Player & More",
-    Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/ameicaa1/Grow-a-Garden/main/Grow_A_Garden.lua"))()
-    end
-})
-
-Tabs.b:AddButton({
-    Title = "Tbao Hub",
-    Description = "Auto Farm, Auto Collect, Auto Sell, Auto Buy, Local Player & More",
-    Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/game/refs/heads/main/TbaoHubGrowGarden"))()
-    end
-})
-
---- Tab c 
- 
-Tabs.c:AddButton({
-    Title = "Hung Hub",
-    Description = "Auto Farm Bonds",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hungquan99/HungHub/main/loader.lua"))()
-    end
-})
-
-Tabs.c:AddButton({
-    Title = "NatHub",
-    Description = "HomeDead RailsRoblox Script - Dead Rails NatHub | Auto Win, Collect Bonds, Aimbot, Teleport, Visual ESP & More",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))();
-    end
-})
-
-Tabs.c:AddButton({
-    Title = " Dead Rails",
-    Description = "Teleport to END, Collect Bonds, Gun Aura, Countdown & More",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails", true))()
-    end
-})
-
---- Tab d
-
-Tabs.d:AddButton({
-    Title = "Ember Hub",
-    Description = "Aimbot, Visual Player ESP & More",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/scripter66/EmberHub/refs/heads/main/Rivals.lua"))()
-    end
-
-})Tabs.d:AddButton({
-    Title = "Soluna",
-    Description = "Aimbot, Triggerbot, Spinbot, Player ESP, Local Player & More",
-    Callback = function()
-        loadstring(game:HttpGet("https://soluna-script.vercel.app/main.lua",true))()
-    end
-})
-Tabs.d:AddButton({
-    Title = "RIVALS",
-    Description = "Aimbot, Silent Aim, Ragebot, Skin Changer, Device Spoofer, Player ESP & More",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/main.lua"))()
-    end
-})
-
---- Tab e
-
-Tabs.e:AddButton({
-    Title = "Arise Crossover",
-    Description = "Auto Attack, Auto Farm Mobs, Local Player & More",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/AriseCrossover"))()
-    end
-})
-
-Tabs.d:AddButton({
-    Title = "Speed HubX",
-    Description = "Aimbot, Silent Aim, Ragebot, Skin Changer, Device Spoofer, Player ESP & More",Auto Farm, Auto Attack, Equip Best, Auto Sell, Teleport, Local Player & More
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-    end
-})
-
-Tabs.d:AddButton({
-    Title = "Arise Crossover scripts word",
-    Description = "Auto Attack, Arise Or Destroy, Target NPC!",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/hub/refs/heads/main/reavscripts.lua"))()
+        
     end
 })
 
