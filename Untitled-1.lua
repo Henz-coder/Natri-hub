@@ -1,12 +1,3 @@
-local LoadingLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Fin12n/Roblox/refs/heads/main/UI-Library/Loading.lua"))()
-
-    LoadingLib:CreateLoading({
-        Title = "Natri-hub",
-        Image = "rbxassetid://85827029493751", -- Thay bằng ID hình ảnh hợp lệ
-        ScriptName = "Những Update tiếp theo sẽ có thêm những scripts mới"
-    })
-
-
 -- Tạo UI icon bật/tắt
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
