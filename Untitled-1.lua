@@ -3,7 +3,7 @@ local LoadingLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Fi
     LoadingLib:CreateLoading({
         Title = "Natri-hub",
         Image = "rbxassetid://85827029493751", -- Thay bằng ID hình ảnh hợp lệ
-        ScriptName = "chúc các bạn có trải nghiệm tốt"
+        ScriptName = "Những Update tiếp theo sẽ có thêm những scripts mới"
     })
 
 
@@ -151,26 +151,42 @@ local Tabs = {
 --- Tab a
 
 Tabs.a:AddButton({
-    Title = "tên scripts",
+    Title = "Redz Hub",
     Description = "được sử dụng",
     Callback = function()
-        -- Thực hiện chức năng a
+     local Settings = {
+    JoinTeam = "Pirates"; -- Pirates / Marines
+    Translator = true;   -- true / false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
     end
 })
 
 Tabs.a:AddButton({
-    Title = "tên scripts",
+    Title = "Xero",
     Description = "được sử dụng",
     Callback = function()
-        -- Thực hiện chức năng a
+       getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
     end
 })
 
 Tabs.a:AddButton({
-    Title = "tên scripts",
+    Title = "HoHo",
     Description = "được sử dụng",
     Callback = function()
-        -- Thực hiện chức năng a
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+    end
+})
+
+Tabs.a:AddButton({
+    Title = "tổng hợp",
+    Description = "sài tạp nếu trong Natri-hub thiếu",
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/TuanAnhIOSNew/refs/heads/main/TuanAnhIOS-TongHop.Lua"))()
     end
 })
 
